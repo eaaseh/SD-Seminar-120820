@@ -1,36 +1,33 @@
-page 50101 "CSD Seminar Card"
+page 50102 "CSD Seminar List"
 // CSD1.00 - 2018-01-01 - D. E. Veloper
-// Chapter 5 - Lab 2-4 & Lab 2-5
-
+// Chapter 5 - Lab 3-6
 {
-    PageType = Card;
+    Caption = 'Seminar List';
+    PageType = List;
     SourceTable = "CSD Seminar";
+    Editable = false;
+    CardPageId = 50101;
+    UsageCategory = Lists;
 
     layout
     {
         area(content)
         {
-            group(General)
+            repeater(Group)
             {
                 field("No."; "No.")
                 {
-                    AssistEdit = true;
                     ApplicationArea = All;
-                    trigger OnAssistEdit();
-                    begin
-                        if AssistEdit then
-                            CurrPage.Update;
-                    end;
                 }
                 field(Name; Name)
                 {
                     ApplicationArea = All;
                 }
-                field("Search Name"; "Search Name")
+                field("Seminar Duration"; "Seminar Duration")
                 {
                     ApplicationArea = All;
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Price"; "Seminar Price")
                 {
                     ApplicationArea = All;
                 }
@@ -39,29 +36,6 @@ page 50101 "CSD Seminar Card"
                     ApplicationArea = All;
                 }
                 field("Maximum Participants"; "Maximum Participants")
-                {
-                    ApplicationArea = All;
-                }
-                field(Blocked; Blocked)
-                {
-                    ApplicationArea = All;
-                }
-                field("Last Date Modified"; "Last Date Modified")
-                {
-                    ApplicationArea = All;
-                }
-            }
-            group(Invoicing)
-            {
-                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
-                {
-                    ApplicationArea = All;
-                }
-                field("VAT Prod. Posting Group"; "VAT Prod. Posting Group")
-                {
-                    ApplicationArea = All;
-                }
-                field("Seminar Price"; "Seminar Price")
                 {
                     ApplicationArea = All;
                 }
@@ -78,6 +52,7 @@ page 50101 "CSD Seminar Card"
                 ApplicationArea = All;
             }
         }
+
     }
 
     actions
