@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[{"Id":50140,"Kind":12,"Name":"CSD Seminar Manager Activities","PackagePath":"/src/Pages/pag40_SeminarManagerActivities.al"},{"Id":50141,"Kind":12,"Name":"My Seminars","PackagePath":"/src/Pages/pag41_MySeminars.al"},{"Id":50140,"Kind":10,"Name":"CSD Seminar Cue","PackagePath":"/src/Tables/tab40_SeminarCue.al"},{"Id":50141,"Kind":10,"Name":"My Seminars","PackagePath":"/src/Tables/tab41_MySeminars.al"}],"Modified":[],"Removed":[]}
