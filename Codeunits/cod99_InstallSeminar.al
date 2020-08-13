@@ -103,4 +103,5 @@ codeunit 50149 InstallSeminar
 
     var
         SetupExists: Boolean;
+
 }
